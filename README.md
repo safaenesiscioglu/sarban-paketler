@@ -1,6 +1,11 @@
 <div align="center">
 
-# 🐪 Sarban Paketleri
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/logo-white.png">
+  <img src="assets/logo-dark.png" alt="Sarban" width="140">
+</picture>
+
+# Sarban Paketleri
 
 **Sarban uygulaması için çevrimdışı harita ve nokta paketleri**
 *Offline map & point packs for the Sarban app*
@@ -10,7 +15,7 @@
 ![İmzalı](https://img.shields.io/badge/imza-Ed25519-4a7c59)
 ![Veri](https://img.shields.io/badge/veri-OpenStreetMap-7ebc6f)
 
-[Türkçe](#türkçe) · [English](#english)
+[Türkçe](#türkçe) · [English](#english) · [Deutsch](#deutsch) · [Русский](#русский) · [Українська](#українська) · [العربية](#العربية)
 
 </div>
 
@@ -56,20 +61,78 @@ Sürüm adları tarihtir: `vYYYY.AA.GG` (ör. `v2026.11.22`). Her sürüm **değ
 
 This repository hosts the content packs downloaded by the **Sarban** app. Packs are downloaded inside the app and work fully offline afterwards.
 
-### 📦 Available packs
-
 | Region | Map | Points | Status |
 |---|---|---|---|
 | 🇹🇷 Ankara | — | — | 🔜 In progress |
 | 🇩🇪 Berlin | `berlin.pmtiles` (~79 MB) | `points_berlin.json` | ✅ Live |
 
-### 📲 How to use
+**How to use:** Open Sarban → **Settings → Packs** → pick your region → **Download**. The app fetches the latest release automatically.
 
-Open Sarban → **Settings → Packs** → pick your region → **Download**. The app fetches the **latest release** automatically.
+**Security:** Each release ships `index.json` (pack list + **SHA-256** of every file) and `index.json.sig` (**Ed25519** signature). The app verifies both before installing. No private key is stored here or in the app.
 
-### 🔒 Security
+---
 
-Each release ships `index.json` (pack list + **SHA-256** of every file) and `index.json.sig` (**Ed25519** signature). The app verifies the signature and every hash before installing. No private key is stored here or in the app.
+## Deutsch
+
+Dieses Repository enthält die Inhaltspakete der App **Sarban**. Die Pakete werden in der App heruntergeladen und funktionieren danach vollständig offline.
+
+| Region | Karte | Orte | Status |
+|---|---|---|---|
+| 🇹🇷 Ankara | — | — | 🔜 In Arbeit |
+| 🇩🇪 Berlin | `berlin.pmtiles` (~79 MB) | `points_berlin.json` | ✅ Verfügbar |
+
+**Nutzung:** Sarban öffnen → **Einstellungen → Pakete** → Region wählen → **Herunterladen**. Die App lädt automatisch die neueste Version.
+
+**Sicherheit:** Jede Version enthält `index.json` (Paketliste + **SHA-256** jeder Datei) und `index.json.sig` (**Ed25519**-Signatur). Die App prüft beides vor der Installation. Kein privater Schlüssel liegt hier oder in der App.
+
+---
+
+## Русский
+
+Этот репозиторий содержит пакеты данных для приложения **Sarban**. Пакеты загружаются в приложении и затем работают полностью без интернета.
+
+| Регион | Карта | Точки | Статус |
+|---|---|---|---|
+| 🇹🇷 Анкара | — | — | 🔜 Готовится |
+| 🇩🇪 Берлин | `berlin.pmtiles` (~79 МБ) | `points_berlin.json` | ✅ Доступно |
+
+**Как использовать:** откройте Sarban → **Настройки → Пакеты** → выберите регион → **Скачать**. Приложение автоматически берёт последнюю версию.
+
+**Безопасность:** каждая версия содержит `index.json` (список пакетов + **SHA-256** каждого файла) и `index.json.sig` (подпись **Ed25519**). Приложение проверяет их перед установкой. Закрытый ключ не хранится ни здесь, ни в приложении.
+
+---
+
+## Українська
+
+Цей репозиторій містить пакети даних для застосунку **Sarban**. Пакети завантажуються в застосунку і далі працюють повністю без інтернету.
+
+| Регіон | Мапа | Точки | Статус |
+|---|---|---|---|
+| 🇹🇷 Анкара | — | — | 🔜 Готується |
+| 🇩🇪 Берлін | `berlin.pmtiles` (~79 МБ) | `points_berlin.json` | ✅ Доступно |
+
+**Як користуватися:** відкрийте Sarban → **Налаштування → Пакети** → оберіть регіон → **Завантажити**. Застосунок автоматично бере останню версію.
+
+**Безпека:** кожна версія містить `index.json` (список пакетів + **SHA-256** кожного файлу) та `index.json.sig` (підпис **Ed25519**). Застосунок перевіряє їх перед встановленням. Закритий ключ не зберігається ні тут, ні в застосунку.
+
+---
+
+## العربية
+
+<div dir="rtl">
+
+يحتوي هذا المستودع على حزم المحتوى لتطبيق **Sarban**. تُنزَّل الحزم من داخل التطبيق، وتعمل بعد ذلك بالكامل دون إنترنت.
+
+| المنطقة | الخريطة | النقاط | الحالة |
+|---|---|---|---|
+| 🇹🇷 أنقرة | — | — | 🔜 قيد الإعداد |
+| 🇩🇪 برلين | `berlin.pmtiles` (~79 ميغابايت) | `points_berlin.json` | ✅ متاحة |
+
+**طريقة الاستخدام:** افتح Sarban ← **الإعدادات ← الحزم** ← اختر منطقتك ← **تنزيل**. يجلب التطبيق أحدث إصدار تلقائيًا.
+
+**الأمان:** يتضمن كل إصدار الملف `index.json` (قائمة الحزم + بصمة **SHA-256** لكل ملف) والملف `index.json.sig` (توقيع **Ed25519**). يتحقق التطبيق منهما قبل التثبيت. لا يُحفظ أي مفتاح خاص هنا أو في التطبيق.
+
+</div>
 
 ---
 
